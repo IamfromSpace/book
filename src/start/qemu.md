@@ -460,12 +460,12 @@ Next we launch GDB in another terminal and tell it to load the debug symbols of
 the example:
 
 ```console
-gdb-multiarch -q target/thumbv7m-none-eabi/debug/examples/hello
+<gdb> -q target/thumbv7m-none-eabi/debug/examples/hello
 ```
 
-**NOTE**: you might need another version of gdb instead of `gdb-multiarch` depending
-on which one you installed in the installation chapter. This could also be
-`arm-none-eabi-gdb` or just `gdb`.
+**NOTE**: Replace <gdb> with the appropriate version of gdb, depending
+on which one you installed in the installation chapter. This could be
+`gdb-multiarch`, `arm-none-eabi-gdb`, or just `gdb`.
 
 Then within the GDB shell we connect to QEMU, which is waiting for a connection
 on TCP port 3333.
